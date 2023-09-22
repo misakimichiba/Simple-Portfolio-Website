@@ -114,7 +114,7 @@ h3 { font-size: var(--fs-h3);}
 }
 
 .section__subtitle--intro,
-.section__subtitle--projects {
+.section__subtitle--aboutMe {
     background: var(--clr-highlight);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
@@ -318,27 +318,27 @@ header {
     }
 }
 
-/* Projects Section */
+/* About Me Section */
 
-.projects {
+.aboutMe {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.projects__body {
+.aboutMe__body {
     margin-bottom: 2em;
 }
 
-.section__title--projects {
+.section__title--aboutMe {
     position: relative;
 }
 
-.projects__img {
+.aboutMe__img {
     box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
-    .projects {
+    .aboutMe {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: 
@@ -347,16 +347,16 @@ header {
             "text img";
         grid-column-gap: 2em;
     }
-    .section__title--projects {
+    .section__title--aboutMe {
         grid-area: title;
     }
 
-    .section__subtitle--projects {
+    .section__subtitle--aboutMe {
         grid-column: 1 / -1;
         grid-row: 2;
     }
 
-    .projects__img {
+    .aboutMe__img {
         grid-area: img;
     }
 }
