@@ -23,6 +23,14 @@ navToggle.addEventListener('click',() => {
     document.body.classList.toggle('nav-open');
 });
 
+navToggle.addEventListener('mouseover',() => {
+    innerCursor.classList.add('grow');
+});
+
+navToggle.addEventListener('mouseleave',() => {
+innerCursor.classList.remove('grow');
+});
+
 btn.addEventListener('mouseover',() => {
         innerCursor.classList.add('grow');
 });
