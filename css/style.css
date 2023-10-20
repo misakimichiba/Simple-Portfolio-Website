@@ -31,7 +31,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --f3-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fs-body: 1.25rem;
     }
 }
 
@@ -322,7 +322,7 @@ header {
     }
 
     .experience + .experience {
-        margin-left: 8em;
+        margin-left: 6.5em;
     }
 }
 
@@ -335,7 +335,7 @@ header {
 }
 
 .aboutMe__body {
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     text-align: center;
 }
 
@@ -369,6 +369,60 @@ header {
     .aboutMe__img {
         grid-area: img;
     }
+}
+
+/* My Skills */
+
+.my-skills {
+    background-color: var(--clr-highlight);
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.section__title--skills {
+    color: var(--clr-dark);
+    position: relative;
+}
+
+.section__title--skills::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    background-color: var(--clr-highlight);
+    overflow: hidden;
+    max-width: 12.5em;
+}
+
+.portfolio__btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.portfolio__btn:hover {
+    transform: scale(1.1);
 }
 
 /* Footer */
