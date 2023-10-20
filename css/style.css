@@ -77,6 +77,8 @@ img {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .btn:hover {
@@ -113,11 +115,18 @@ h3 { font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
-.section__subtitle--aboutMe {
+.section__subtitle--intro {
     background: var(--clr-highlight);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+.section__subtitle--aboutMe {
+    background: var(--clr-dark);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    color: var(--clr-light);
     margin-bottom: 1em;
 }
 
@@ -173,7 +182,6 @@ header {
     padding: .5em;
     background: transparent;
     border: 0;
-    cursor: pointer;
     position: absolute;
     right: 1em;
     top: 1em;
@@ -276,20 +284,20 @@ header {
     }
 }
 
-/* Skills Section */
+/* Experiences Section */
 
-.my-skills {
+.my-experience {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
 }
 
-.section__title--skills {
+.section__title--experience {
     color: var(--clr-light);
     position: relative;
 }
 
-.section__title--skills::after {
+.section__title--experience::after {
     content: '';
     display: block;
     width: 25%;
@@ -298,23 +306,23 @@ header {
     background: currentColor;
 }
 
-.skills__img {
-    max-width: 100%;
+.experience__img {
+    max-width: 2em;
     display: block;
-    margin: 1em auto;
+    margin: 0.25em auto;
     position: relative;
     font-size: var(--fs-h1);
 }
 
 @media (min-width: 800px) {
-    .skills {
+    .experiences {
         display: flex;
         max-width: 1000px;
         margin: 0 auto;
     }
 
-    .skill + .skill {
-        margin-left: 10em;
+    .experience + .experience {
+        margin-left: 8em;
     }
 }
 
@@ -323,10 +331,12 @@ header {
 .aboutMe {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: var(--clr-highlight);
 }
 
 .aboutMe__body {
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .section__title--aboutMe {
