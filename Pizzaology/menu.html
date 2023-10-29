@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='image/cart.svg' rel='icon' type='image/x-icon'/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- main css -->
+  <link rel="stylesheet" href="misakistyle.css">
+
+  <title>Pizzaology | Menu</title>
+
+</head>
+
+<body class="menuBody">
+  <!-- header -->
+  <header>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <h2>Pizzaology</h2>
+        <ul class="navbar-nav mx-auto text-capitalize StaatlichesHeading">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" >Special Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Contact Us</a>
+          </li>
+        </ul>
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between hell">
+            <p class="Staatliches"><span id="item-count">0 </span> items - RM <span class="item-total">0.00</span></p>
+          </div>
+          <!-- end of single info -->
+    </nav>
+    <!-- end of nav -->
+
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="StaatlichesBigHeading">Welcome to <span class="piz">Pizzaology's</span> Menu</h1>
+          <div id="cart" class="cart montserrat">
+            <!-- cart total -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+              <h5>total</h5>
+              <h5> RM <span id="cart-total">0.00</span> </h5>
+            </div>
+            <!--end cart total -->
+            <!-- cart buttons -->
+            <div class="cart-buttons-container mt-3 d-flex justify-content-center">
+              <a href="#" class="btn btn-outline-secondary text-uppercase btn-black" onclick="check(); return false;">checkout</a>
+            </div>
+            <!--end of  cart buttons -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- header -->
+  <!-- store -->
+  <section class="py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <p class="StaatlichesHeading"><span class="pizzadiv">Pizza</span></p>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!-- store  items-->
+      <div class="row">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="pizza">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/alohachicken.png" class="card-img-top store-img" alt="Aloha Chicken Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Aloha Chicken Pizza</h5>
+                <h5 class="store-item-value">$ <span>15</span></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="pizza">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/beefpepperoni.jpg" class="card-img-top store-img" alt="Pepperoni Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Pepperoni Pizza</h5>
+                <h5 class="store-item-value">$ <span>15</span></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="pizza">
+          <div class="card">
+            <div class="img-container">
+              <img src="image/margheritapizza.jpg" class="card-img-top store-img" alt="Margharita Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Margharita Pizza</h5>
+                <h5 class="store-item-value">$ <span>14.50</span></h5>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="pizza">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/vegetarianpizza.jpeg" class="card-img-top store-img" alt="Vegetarian Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches" >
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Vegetarian Pizza</h5>
+                <h5 class="store-item-value">$ <span>14</span></h5>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="pizza">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/nutellapizza.jpeg" class="card-img-top store-img" alt="Nutella Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Nutella Pizza</h5>
+                <h5 class="store-item-value">$ <span>13</span></h5>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="pizza">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/peanutbutterpizza.jpeg" class="card-img-top store-img" alt="Peanut Butter Pizza">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Peanut Butter Pizza</h5>
+                <h5 class="store-item-value">$ <span>13</span></h5>
+
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <p class="StaatlichesHeading"><span class="sidesdiv">Sides</span></p>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!-- store  items-->
+      <div class="row">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="sides">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/chickenwings.jpeg" class="card-img-top store-img" alt="Chicken Wings">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches sidescard">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Chicken Wings</h5>
+                <h5 class="store-item-value">$ <span>10</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="sides">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/garlicbread.png" class="card-img-top store-img" alt="Garlic Bread">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches sidescard">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Garlic Bread</h5>
+                <h5 class="store-item-value">$ <span>8</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="sides">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/lasagna.jpeg" class="card-img-top store-img" alt="Lasagna">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches sidescard">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Lasagna</h5>
+                <h5 class="store-item-value">$ <span>10</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <p class="StaatlichesHeading"><span class="drinksdiv">Drinks</span></p>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!-- store  items-->
+      <div class="row">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="drinks">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/7UP.png" class="card-img-top store-img" alt="7Up Drink">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches drinkscard">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>7Up Drink</h5>
+                <h5 class="store-item-value">$ <span>4</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item Pizza" data-item="drinks">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/applejuice.jpg" class="card-img-top store-img" alt="Apple Juice">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches drinkscard" >
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Apple Juice</h5>
+                <h5 class="store-item-value">$ <span>6</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="drinks">
+          <div class="card ">
+            <div class="img-container">
+              <img src="image/cocacola.jpeg" class="card-img-top store-img" alt="Coca Cola">
+              <span class="store-item-icon">
+                <img src="image/cart.svg" alt="cart icon" onclick="validation()">
+              </span>
+            </div>
+            <div class="card-body Staatliches drinkscard">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5>Coca Cola</h5>
+                <h5 class="store-item-value">$ <span>4</span></h5>
+              </div>
+            </div>
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+      </div>
+    </div>
+  </section>
+
+  <!--end of store items -->
+
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- cart js -->
+  <script src="cart.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        function validation(){
+            swal("Added to Cart!", "", "success");
+        }
+        function check(){
+          const status = document.getElementById('cart-total').textContent
+          if (status === '0.00'){
+            swal({
+  title: 'Cart is empty',
+  text: 'Please add items to your order',
+  
+})
+          }
+          else{ 
+            window.location.href = '#'
+            swal({
+  title: 'Cart has been checked out',
+  text: 'You have successfully ordered',
+})
+            return;
+          }
+        }
+    
+
+        
+    </script>
+    <footer>
+      <div class="wrapper">
+        <small>©2021 <strong>PIZZAOLOGY</strong>, All Rights Reserved</small>
+        <nav class="footer-nav">
+          <a href="#" class="gototop">Back to Top</a>
+          <a href="#">Promotions</a>
+          <a href="#">Contact us</a>
+        </nav>
+      </div>
+  </footer>   
+</body>
+
+</html>

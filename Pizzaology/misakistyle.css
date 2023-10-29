@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Staatliches&display=swap');
+
+:root{
+  --dark-color: #348374;
+  --blue-solid: #06f0c5;
+  --blue-transparent: #b3d9ff;
+  --transparant-alt: rgba(70, 253, 238, 0.123);
+  --blue-light: #74c7b8;
+  --white-solid: #ffffff;
+  --black: white;
+  --new: green;
+  --gradient-color: linear-gradient(to right, var(--new), var(--black));
+  --gradient-alt: linear-gradient(to right, var(--blue-light), var(--blue-transparent));
+  --slate-color: rgb(16,24,50);
+  --blue-color: #00bcdd;
+  --pink-color: #ff00ff;
+}
+
+.py-5{
+  background: var(--gradient-alt);
+}
+/*#Ef4f4f red
+  #74c7b8 turquoise
+  #F9AF23 orange*/
+nav{
+  padding-top: 10px; 
+  border-bottom: 3px solid black;
+}
+nav h2{
+  border-radius: 50%; height: 60px; width: 300px;background-color: red;text-align: center; padding-top: .1rem; font-size: 3em; color: white;font-family: 'Staatliches', cursive; margin-left: 10px;
+}
+.menuBody {
+  background: #fff;
+  color: black;
+}
+.StaatlichesHeading{
+  font-family: 'Staatliches', cursive;
+  font-size: 250%;
+  text-align: center;
+}
+.StaatlichesBigHeading{
+  font-family: 'Staatliches', cursive;
+  font-size: 350%;
+  text-align: center;
+  font-size: 10em;
+}
+.Staatliches{
+  font-family: 'Staatliches', cursive;
+  font-size: 150%;
+}
+.montserratNormal{
+font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+.montserrat{
+  font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    color: black;
+}
+/* nav links */
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: #74c7b8;
+}
+.nav-link {
+  color: black;
+  font-size: .8em;
+}
+.hell{
+  float: right;
+}
+.cart .montserrat{
+  text-align: center;
+}
+
+.pizzadiv{
+  border-style: solid;padding: 5px 30px ;border-radius: 25px;border-color: #Ef4f4f;
+}
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: black;
+  cursor: pointer;
+}
+
+.card-body.Staatliches{
+  background-color: #Ef4f4f;
+}
+.card-body.Staatliches.sidescard{
+  background-color: #F9AF23;
+}
+.card-body.Staatliches.drinkscard{
+  background-color: #74c7b8;
+}
+.drinksdiv{
+  border-style: solid;padding: 5px 30px ;border-radius: 25px;border-color: #74c7b8;
+}
+
+.sidesdiv{
+  border-style: solid;padding: 5px 30px ;border-radius: 25px;border-color: #F9AF23;
+}
+.cart-info {
+  border: 0.1rem solid black;
+  color: black;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: #74c7b8;
+  border-color: #74c7b8;
+  color: #fff;
+}
+.cart-info:hover .cart-info__icon {
+  color: #fff;
+}
+/* end of info icons */
+/* banner */
+
+.max-height {
+  min-height: calc(100vh - 76px);
+  
+  position: relative;
+}
+.banner {
+  color: #fff;
+  margin-top: -4rem;
+}
+.banner-title {
+  color: #74c7b8;
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: black;
+  border: 0.2rem solid black;
+}
+.banner-link:hover {
+  background: black;
+  color: #74c7b8;
+}
+/* endo of banner */
+/* cart  */
+.cart {
+  text-align: center;
+  position: absolute;
+  min-height: 10rem;
+  background: #fff;
+  top: 0%;
+  right: 0%;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0%;
+  overflow: hidden;
+}
+.show-cart {
+  text-align: center;
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* end of cart */
+.piz{
+  color: #Ef4f4f;
+}
+#cart-item-price {
+  font-size: 1rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-black {
+  color: black !important;
+  border-color: black !important;
+}
+.btn-black:hover {
+  color: #74c7b8 !important;
+  background: black !important;
+}
+/* end of cart buttons */
+
+/* store items */
+.store {
+  background: white;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: #fff;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: #74c7b8;
+}
+.store-item-value {
+  color: black;
+}
+
+/*end of  store items */
+
+/* ligthbox */
+
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6) !important;
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.lightbox-holder {
+  position: relative;
+}
+.lightbox-item {
+  min-height: 80vh;
+  background: url("../img/cake-1.jpeg") center/cover fixed no-repeat;
+  border-radius: 0.3rem;
+}
+.lightbox-close {
+  color: #74c7b8;
+  font-size: 3rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.lightbox-close:hover {
+  color: #74c7b8;
+}
+
+.lightbox-control {
+  position: absolute;
+  font-size: 4rem;
+  color: #74c7b8;
+  transition: all 1s linear;
+  cursor: pointer;
+}
+.lightbox-control:hover {
+  color: #74c7b8;
+}
+.btnLeft {
+  top: 50%;
+  left: 0;
+  transform: translateX(-60%);
+}
+.btnRight {
+  top: 50%;
+  right: 0;
+  transform: translateX(60%);
+}
+
+.nav-item{
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+header{
+  background: var(--gradient-alt);
+}
+
+    footer {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png') repeat center;
+    display: table;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: .875rem;
+  }
+  
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  footer small {
+    color: #ccc;
+    letter-spacing: .025rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #ef4f4f;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  .footer-nav a:hover {
+    color: #f26896;
+    transition: color .15s ease-in-out;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+
+  .gototop{
+    width: 70px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+  }
