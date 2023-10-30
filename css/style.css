@@ -465,6 +465,26 @@ header {
     padding: 0.5em;
 }
 
+/* Art and Design Content */
+.art_content {
+    display: grid;
+}
+
+.art_content__item {
+    background-color: var(--clr-highlight);
+    overflow: hidden;
+    padding: 1em 1em 1em 1em;
+}
+
+.art_img {
+    max-width: 8em;
+    max-height: 8em;
+    display: block;
+    margin: 0.25em auto;
+    position: relative;
+    font-size: var(--fs-h1);
+}
+
 /* Cursor */
 
 .inner-cursor {
@@ -512,7 +532,7 @@ ul.breadcrumb {
   ul.breadcrumb li {
     display: inline;
     font-size: var(--fs-h3);
-  }
+  } 
   
   /* Add a slash symbol (/) before/behind each list item */
   ul.breadcrumb li+li:before {
