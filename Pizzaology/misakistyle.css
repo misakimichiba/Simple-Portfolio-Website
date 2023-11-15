@@ -157,15 +157,16 @@ font-family: 'Montserrat', sans-serif;
   top: 0%;
   right: 0%;
   transition: all 0.3s ease-in-out;
-  background: rgba(255, 255, 255, 0.5);
   width: 0%;
   overflow: hidden;
 }
 .show-cart {
   text-align: center;
+  margin-top: 5rem;
   width: 18rem;
   padding: 2rem 1.5rem;
   transform: rotateY(-360deg);
+  z-index: 1;
 }
 .cart-item {
   transition: all 2s ease-in-out;
